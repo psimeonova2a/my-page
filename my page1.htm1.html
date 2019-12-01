@@ -1,0 +1,128 @@
+<html> 
+    <head>
+        <title>My page</title>
+        <meta charset ="utf-8">
+        <script>
+            function calcnum(num)
+            {
+                var num1 = parseInt(document.getElementById("num1").value);
+                var num2 = parseInt(document.getElementById("num2").value);
+              if (num == 1)
+                {
+                  var result = num1 + num2;
+                  alert("Сумата е:"+ result);
+                }
+                else if (num == 2)
+                {
+                    var result = num1 - num2;
+                    alert("Разликата е:"+ result);
+                }
+            }
+        </script>
+        <style>
+            body {
+                background-color: lightgreen;
+            }
+            button {
+                background-color: lightgrey;
+                border: none;
+                color:black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+            h1{
+                color:darkolivegreen;
+                font-family:"Comic Sans MS", cursive, sans-serif;
+            }
+            td{
+                text-align: center;
+                font-family:"Comic Sans MS", cursive, sans-serif;
+
+            }
+            
+
+
+        </style>
+    </head>
+
+    <body>
+        <!-- <h2> Recipe for cake </h2>
+        <dl >
+            <li>Milk</li>
+            <li> Cream </li>
+            <li>Chocolate</li>
+            <li>Strowberies</li>
+        </dl> -->
+        <h1> <center>Калкулатор</center></h1>
+        <form>
+            <!-- <table>
+            <tr>
+                <td>Потребителско име:</td> 
+                <td><input id="un" input type="text"></td>
+            </tr>
+            <tr colspan = "2">
+                <td>
+
+                </td>
+            </tr>
+            <tr colspan = "2">
+                    <td>
+    
+                    </td>
+                </tr>
+           <tr> 
+           <td>Парола:</td>
+           <td><input id="ps" input type="password"> </td>
+           
+        </tr>
+        <tr colspan = "2">
+                <td>
+
+                </td>
+            </tr>
+        <tr>
+            <td colspan = "2"; align="center"><button onclick="login()"> Влез </button></td>
+        </tr>
+            </table> -->
+
+
+            <table align= "center" width = 30% height=20%>
+                    <tr>
+                        <td><b>Първо число</b></td> 
+                        <td><input id="num1" input type="number"></td>
+                    </tr>
+                    <tr colspan = "2">
+                        <td>
+        
+                        </td>
+                    </tr>
+                    <tr colspan = "2">
+                            <td>
+            
+                            </td>
+                        </tr>
+                   <tr> 
+                   <td ><b>Второ число</b></td>
+                   <td><input id="num2" type = "number"> </td>
+                   
+                </tr>
+                <tr colspan = "2">
+                        <td>
+        
+                        </td>
+                    </tr>
+                <tr>
+                    <td> <button onclick="calcnum(1)"> Събери </button></center></td>
+                    <td> <button onclick="calcnum(2)"> Извади </button></td>
+                </tr>
+                
+                        
+                    
+                    </table>
+        </form>
+    </body>
+
+</html>
